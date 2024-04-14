@@ -1,0 +1,69 @@
+Python Numbers
+In Python, numbers are of the following data types:
+
+int
+float
+complex
+ 
+
+int
+int is a positive or a negative integer of any length. int should not be a decimal or a fraction.
+
+Example:
+
+int1 = -2345698
+int2 = 0
+int3 = 100548
+
+print(type(int1))
+print(type(int2))
+print(type(int3))
+Output:
+
+<class 'int'>
+<class 'int'>
+<class 'int'>
+ 
+
+Float
+A float is a positive or a negative decimal number. It can be an exponential number or a fraction.
+
+Example:
+
+flt1 = -8.35245     #decimal number
+flt2 = 0.000001     #decimal number
+flt3 = 2.6E44       #exponential number
+flt4 = -6.022e23    #exponential number
+
+print(type(flt1))
+print(type(flt2))
+print(type(flt3))
+print(type(flt4))
+Output:
+
+<class 'float'>
+<class 'float'>
+<class 'float'>
+<class 'float'>
+ 
+
+complex
+Complex numbers are a combination of real and imaginary number. They are of the form a + bj, where a is the real part and bj is the imaginary part.
+
+Example:
+
+cmplx1 = 2 + 4j
+cmplx2 = -(3 + 7j)
+cmplx3 = -4.1j
+cmplx4 = 6j
+
+print(type(cmplx1))
+print(type(cmplx2))
+print(type(cmplx3))
+print(type(cmplx4))
+Output:
+
+<class 'complex'>
+<class 'complex'>
+<class 'complex'>
+<class 'complex'>
