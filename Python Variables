@@ -1,0 +1,79 @@
+Python Variables
+Variables are containers that store information that can be manipulated and referenced later by the programmer within the code.
+
+In python, the programmer does not need to declare the variable type explicitly, we just need to assign the value to the variable.
+
+Example:
+
+name = "Abhishek"   #type str
+age = 20            #type int
+passed = True       #type bool
+ 
+
+It is always advisable to keep variable names descriptive and to follow a set of conventions while creating variables:
+
+Variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable name must start with a letter or the underscore character.
+Variables are case sensitive.
+Variable name cannot start with a number.
+Example:
+
+Color = "yellow"    #valid variable name
+cOlor = "red"       #valid variable name
+_color = "blue"     #valid variable name
+
+5color = "green"    #invalid variable name
+$color = "orange"   #invalid variable name
+ 
+
+Sometimes, a multi-word variable name can be difficult to read by the reader. To make it more readable, the programmer can do the following:
+
+Example:
+
+NameOfCity = "Mumbai"       #Pascal case
+nameOfCity = "Berlin"       #Camel case
+name_of_city = "Moscow"     #snake case
+ 
+
+Scope of variable:
+The scope of the variable is the area within which the variable has been created. Based on this a variable can either have a local scope or a global scope.
+
+Local Variable:
+A local variable is created within a function and can be only used inside that function. Such a variable has a local scope.
+
+Example:
+
+icecream = "Vanilla"    #global variable
+def foods():
+    vegetable = "Potato"    #local variable
+    fruit = "Lichi"         #local variable
+    print(vegetable + " is a local variable value.")
+    print(icecream + " is a global variable value.")
+    print(fruit + " is a local variable value.")
+
+foods()
+Output:
+
+Potato is a local variable value.
+Vanilla is a global variable value.
+Lichi is a local variable value.
+ 
+
+Global Variable:
+A global variable is created in the main body of the code and can be used anywhere within the code. Such a variable has a global scope.
+
+Example:
+
+icecream = "Vanilla"    #global variable
+def foods():
+    vegetable = "Potato"    #local variable
+    fruit = "Lichi"         #local variable
+    print(vegetable + " is a local variable value.")
+
+foods()
+print(icecream + " is a global variable value.")
+print(fruit + " is a local variable value.")
+Output:
+
+Potato is a local variable value.
+Vanilla is a global variable value.
