@@ -1,0 +1,152 @@
+Data Types
+Data type specifies the type of value a variable requires to do various operations without causing an error. By default, python provides the following built-in data types:
+
+Numeric data: int, float, complex
+int: 3, -8, 0
+
+float: 7.349, -9.0, 0.0000001
+
+complex: 6 + 2i
+
+more on numeric data types in the number chapter.
+
+ 
+
+Text data: str
+str: “Hello World!!!”, “Python Programming”
+
+ 
+
+Boolean data:
+Boolean data consists of values True or False.
+
+ 
+
+Sequenced data: list, tuple, range
+list: A list is an ordered collection of data with elements separated by a comma and enclosed within square brackets. Lists are mutable and can be modified after creation.
+
+Example:
+
+list1 = [8, 2.3, [-4, 5], ["apple", "banana"]]
+print(list1)
+Output:
+
+[8, 2.3, [-4, 5], ['apple', 'banana']]
+ 
+
+tuple: A tuple is an ordered collection of data with elements separated by a comma and enclosed within parentheses. Tuples are immutable and can not be modified after creation. 
+
+Example:
+
+tuple1 = (("parrot", "sparrow"), ("Lion", "Tiger"))
+print(tuple1)
+Output:
+
+(('parrot', 'sparrow'), ('Lion', 'Tiger'))
+ 
+
+range: returns a sequence of numbers as specified by the user. If not specified by the user then it starts from 0 by default and increments by 1.
+
+Example:
+
+sequence1 = range(4,14,2)
+for i in sequence1:
+    print(i)
+Output:
+
+4
+6
+8
+10
+12
+ 
+
+Mapped data: dict
+dict: a dictionary is an unordered collection of data containing a key:value pair. The key:value pairs are enclosed within curly brackets.
+
+Example:
+
+dict1 = {"name":"Sakshi", "age":20, "canVote":True}
+print(dict1)
+Output:
+
+{'name': 'Sakshi', 'age': 20, 'canVote': True}
+ 
+
+Binary data: bytes, bytearray, memoryview
+bytes: bytes() function is used to convert objects into byte objects, or create empty bytes object of the specified size.
+
+Example:
+
+#Converting string to bytes
+str1 = "This is a string"
+arr1 = bytes(str1, 'utf-8')
+print(arr1)
+arr2 = bytes(str1, 'utf-16')
+print(arr2)
+
+#Creating bytes of given size
+bytestr = bytes(4)
+print(bytestr)
+Output:
+
+b'This is a string'
+b'\xff\xfeT\x00h\x00i\x00s\x00 \x00i\x00s\x00 \x00a\x00 \x00s\x00t\x00r\x00i\x00n\x00g\x00'
+b'\x00\x00\x00\x00'
+ 
+
+bytearray: bytearray() function is used to convert objects into bytearray objects, or create empty bytearray object of the specified size.
+
+Example:
+
+#Converting string to bytes
+str1 = "This is a string"
+arr1 = bytearray(str1, 'utf-8')
+print(arr1)
+arr2 = bytearray(str1, 'utf-16')
+print(arr2)
+
+#Creating bytes of given size
+bytestr = bytearray(4)
+print(bytestr)
+Output:
+
+bytearray(b'This is a string')
+bytearray(b'\xff\xfeT\x00h\x00i\x00s\x00 \x00i\x00s\x00 \x00a\x00 \x00s\x00t\x00r\x00i\x00n\x00g\x00')
+bytearray(b'\x00\x00\x00\x00')
+ 
+
+memoryview: memoryview() function returns a memory view object from a specified object.
+
+Example:
+
+str1 = bytes("home", "utf-8")
+memoryviewstr = memoryview(str1)
+print(list(memoryviewstr[0:]))
+Output:
+
+[104, 111, 109, 101]
+ 
+
+Set data:
+Set is an unordered collection of elements in which no element is repeated. The elements of sets are separated by a comma and contained within curly braces.
+
+Example:
+
+set1 = {4, -5, 8, 3, 2.9}
+print(set1)
+Output:
+
+{2.9, 3, 4, 8, -5}
+ 
+
+None:
+None is used to define a null value. When we assign a None value to a variable, we are essentially resetting it to its original empty state which is not the same as zero, an empty string or a False value.
+
+Example:
+
+state = None
+print(type(state))
+Output:
+
+<class 'NoneType'>
